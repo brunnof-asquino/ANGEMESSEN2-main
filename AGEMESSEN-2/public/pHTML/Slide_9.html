@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+    body {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+    @font-face {
+        font-family: Naville;
+        src: url("../Naville/Naville-Regular.ttf");
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        background-color: #121212;
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    footer {
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: yellow;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: yellow;
+
+
+    }
+
+    header .logo {
+        position: relative;
+        max-width: 150px;
+        color: rgb(0, 0, 0);
+        font-family: Naville;
+        text-transform: uppercase;
+        font-size: 2vw;
+    }
+
+    header .navegation ul {
+        position: relative;
+        display: flex;
+    }
+
+    header .navegation li {
+        list-style: none;
+        color: rgb(0, 0, 0);
+    }
+
+    header .navegation li a {
+        color: rgb(0, 0, 0);
+        display: flex;
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        margin-left: 45px;
+        border-radius: 50%;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .navegation li a:hover {
+        transform: translateY(-10px);
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    header .navegation li img:hover {
+        filter: invert(1);
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icons {
+        position: absolute;
+        left: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .icons li {
+        list-style: none;
+    }
+
+    .icons li a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .icons li a:hover {
+        transform: translateY(-10px);
+        background: yellow;
+
+    }
+
+    .icons li img {
+        filter: invert(1);
+    }
+
+    /* form {
+        margin-top: 10%;
+    } */
+
+    h1 {
+        font-size: x-large;
+    }
+
+    .input_text {
+        padding: 10px 10px;
+        width: 350px;
+        background-color: rgba(0, 0, 0, 0);
+        border-bottom: 1px double #ffffff;
+        border-top: 1px double #00000000;
+        border-left: 1px double #00000000;
+        border-right: 1px double #00000000;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .teste {
+        margin-top: 10%;
+    }
+
+    #avancar {
+        margin-left: 520px;
+        background-color: #12121200;
+        border: 1px double #12121200;
+        color: white;
+    }
+
+    .retornar {
+        padding-right: 480px;
+        font-size: smaller;
+        text-decoration: none;
+    }
+
+    .caixa_box {
+        text-align: justify;
+        margin-left: 365px;
+    }
+
+    .img {
+        margin-top: 25px;
+    }
+
+    .Hmmmm {
+        display: flex;
+        justify-content: center;
+        gap: 55px;
+    }
+</style>
+
+<body>
+    <section>
+        <header>
+            <h2 class="logo">ANGEMESSEN</h2>
+            <nav>
+                botão aqui
+            </nav>
+            <nav class="navegation">
+                <ul>
+                    <li><a href="#"><img src="../../img/icons8-shopping-trolley-24.png" width="30px" height="30px"></a></li>
+                    <li><a href="#"><img src="../../img/icons8-usuário-24.png" width="30px" height="30px"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="....php" method="post" class="teste">
+
+            <h1>CRIAR CADASTRO</h1>
+            <br><br>
+
+            <div style="margin-top: 20px;">
+                <a class="retornar" href="url" style="color: #ffffff;">< RETORNAR </a><br>
+
+                        <div class="Hmmmm">
+                            <div class="img"><img src="../../Imagem/usuario.png" width="195px" height="195px" alt=""></div>
+
+                            <div class="yuh">
+                                <label for="nome">
+                                    <input type="text" placeholder="Nome Completo" class="input_text" id="nome"
+                                        name="Nome" size="40" maxlength="50" required>
+                                </label>
+                                <br><br>
+                                <label for="email">
+                                    <input type="email" placeholder="E-mail" class="input_text" id="email" size="40"
+                                        maxlength="50" required>
+                                </label>
+                                <br><br>
+                                <label for="senha">
+                                    <input type="password" placeholder="Senha (8 dígitos)" name="Senha"
+                                        class="input_text" id="senha" size="40" maxlength="8" required>
+                                </label>
+                                <br><br>
+                                <label for="end">
+                                    <input type="password" placeholder="Confirme sua senha" name="Endereco"
+                                        class="input_text" id="end" size="40" maxlength="8" required>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="caixa_box">
+                            <div>
+                                <label for="Caixa">
+                                    <input type="checkbox" name="Termo" class="termo" id="Caixa">
+                                    Li e aceito todos os <a href=""
+                                        style="text-decoration: none; color: rgb(67, 195, 255);">termos de uso</a>. <br>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="Receber_Email" class="receber_email" name="Caixa" checked>
+                                Aceito receber novidades e promoções por e-mail. <br><br>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <input href="Slide_10.html" type="submit" value="AVANÇAR >" id="avancar">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <ul class="icons">
+            <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
